@@ -1,8 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .mainContainer {
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin-top: 64px;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .dataContainer {
@@ -10,25 +15,38 @@
   flex-direction: column;
   justify-content: center;
   max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 15px;
 }
 
 .header {
   text-align: center;
   font-size: 32px;
   font-weight: 600;
+  padding-top: 32px;
 }
 
 .bio {
   text-align: center;
   color: gray;
   margin-top: 16px;
+  padding-left: 45px;
+  padding-right: 45px;
+  line-height: 1.5;
 }
 
 .waveButton {
   cursor: pointer;
   margin-top: 16px;
-  padding: 8px;
-  border: 0;
-  border-radius: 5px;
-  
+  padding: 15px;
+  border-top: 1px solid #00000025;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+}
+.waveButton:hover {
+    background-color: black;
+    color: white;
+    transition: opacity 0.3s;
+    opacity: 1;
 }
