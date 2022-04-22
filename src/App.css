@@ -4,6 +4,7 @@
 
 .mainContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -49,4 +50,9 @@
     color: white;
     transition: opacity 0.3s;
     opacity: 1;
+}
+.bottomFixed {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 }
